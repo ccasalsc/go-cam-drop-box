@@ -25,6 +25,10 @@ comments:
   is reported to be activated by MKK6 in vitro (PMID:9218798). HRAS chosen for generic
   dominant-negative Ras. The PTH2R->PKCdelta join is a curator inference, not tested
   for TIP39. KRT14 arm not modelled (no evidence linking Ca2+/PKC to loss of deltaNp63).'
+- 'Localization: p38delta (MAPK13) placed in nucleus per PMID:15340077 (p38delta-ERK1/2
+  complex relocates to the keratinocyte nucleus in response to PKCdelta; abstract
+  only, survival/death context). MEK3 (MAP2K3) placed in cytoplasm with TAS PMID:8622669
+  only; no experimental localization found.'
 - 'Revision: HRAS -> MAP3K1 and MAP2K3 -> MAPK13 changed to ''directly positively
   regulates'' with has_input. HRAS-GTP binds the MEKK1 kinase domain directly (PMID:7744823;
   mouse MEKK1, hence ISS with MGI:MGI:1346872); MKK3 phosphorylates/activates p38delta
@@ -141,8 +145,8 @@ activities:
   occurs_in:
     type: CellularAnatomicalEntityAssociation
     evidence:
-    - term: ECO:0000315
-      reference: PMID:12080077
+    - term: ECO:0000304
+      reference: PMID:8622669
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-7646-0052
@@ -155,7 +159,25 @@ activities:
       date: '2026-10-01'
       provided_by:
       - http://geneontology.org
-    term: CL:0000312
+    term: GO:0005737
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000315
+        reference: PMID:12080077
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-7646-0052
+          date: '2026-10-01'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-10-01'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000312
   part_of:
     type: BiologicalProcessAssociation
     evidence:
@@ -580,8 +602,8 @@ activities:
   occurs_in:
     type: CellularAnatomicalEntityAssociation
     evidence:
-    - term: ECO:0000315
-      reference: PMID:12080077
+    - term: ECO:0000314
+      reference: PMID:15340077
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-7646-0052
@@ -594,7 +616,33 @@ activities:
       date: '2026-10-01'
       provided_by:
       - http://geneontology.org
-    term: CL:0000312
+    term: GO:0005634
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:15340077
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-7646-0052
+          date: '2026-10-01'
+          provided_by:
+          - http://geneontology.org
+      - term: ECO:0000315
+        reference: PMID:12080077
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-7646-0052
+          date: '2026-10-01'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-10-01'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000312
   part_of:
     type: BiologicalProcessAssociation
     evidence:
@@ -1266,6 +1314,12 @@ objects:
   type: gocam:Object
 - id: UniProtKB:O15264
   label: MAPK13 Hsap
+  type: gocam:Object
+- id: GO:0005737
+  label: cytoplasm
+  type: gocam:Object
+- id: ECO:0000304
+  label: author statement supported by traceable reference used in manual assertion
   type: gocam:Object
 provenances:
 - contributor:
