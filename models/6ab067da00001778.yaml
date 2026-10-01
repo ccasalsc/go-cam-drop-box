@@ -26,102 +26,6 @@ comments:
   dominant-negative Ras. The PTH2R->PKCdelta join is a curator inference, not tested
   for TIP39. KRT14 arm not modelled (no evidence linking Ca2+/PKC to loss of deltaNp63).'
 activities:
-- id: gomodel:6ab067da00001778/6ab067da00001815
-  enabled_by:
-    type: EnabledByGeneProductAssociation
-    evidence:
-    - term: ECO:0000314
-      reference: PMID:34353904
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0001-7646-0052
-        date: '2026-10-01'
-        provided_by:
-        - http://geneontology.org
-    provenances:
-    - contributor:
-      - https://orcid.org/0000-0001-7646-0052
-      date: '2026-10-01'
-      provided_by:
-      - http://geneontology.org
-    term: UniProtKB:P49190
-  molecular_function:
-    type: MolecularFunctionAssociation
-    term: GO:0004991
-  occurs_in:
-    type: CellularAnatomicalEntityAssociation
-    evidence:
-    - term: ECO:0000314
-      reference: PMID:34353904
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0001-7646-0052
-        date: '2026-10-01'
-        provided_by:
-        - http://geneontology.org
-    provenances:
-    - contributor:
-      - https://orcid.org/0000-0001-7646-0052
-      date: '2026-10-01'
-      provided_by:
-      - http://geneontology.org
-    term: GO:0005886
-  part_of:
-    type: BiologicalProcessAssociation
-    evidence:
-    - term: ECO:0000314
-      reference: PMID:34353904
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0001-7646-0052
-        date: '2026-10-01'
-        provided_by:
-        - http://geneontology.org
-    provenances:
-    - contributor:
-      - https://orcid.org/0000-0001-7646-0052
-      date: '2026-10-01'
-      provided_by:
-      - http://geneontology.org
-    term: GO:0007189
-  molecular_associations:
-  - type: MoleculeAssociation
-    evidence:
-    - term: ECO:0000314
-      reference: PMID:34353904
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0001-7646-0052
-        date: '2026-10-01'
-        provided_by:
-        - http://geneontology.org
-    provenances:
-    - contributor:
-      - https://orcid.org/0000-0001-7646-0052
-      date: '2026-10-01'
-      provided_by:
-      - http://geneontology.org
-    predicate: RO:0002233
-    molecule: gomodel:6ab067da00001778/6ab067da00001819
-  causal_associations:
-  - type: CausalAssociation
-    evidence:
-    - term: ECO:0000314
-      reference: PMID:34353904
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0001-7646-0052
-        date: '2026-10-01'
-        provided_by:
-        - http://geneontology.org
-    provenances:
-    - contributor:
-      - https://orcid.org/0000-0001-7646-0052
-      date: '2026-10-01'
-      provided_by:
-      - http://geneontology.org
-    predicate: RO:0002629
-    downstream_activity: gomodel:6ab067da00001778/6ab067da00001820
 - id: gomodel:6ab067da00001778/6ab067da00002037
   enabled_by:
     type: EnabledByGeneProductAssociation
@@ -162,6 +66,32 @@ activities:
       provided_by:
       - http://geneontology.org
     term: GO:0001533
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:10908733
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-7646-0052
+          date: '2026-10-01'
+          provided_by:
+          - http://geneontology.org
+      - term: ECO:0000314
+        reference: PMID:27000502
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-7646-0052
+          date: '2026-10-01'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-10-01'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000312
   part_of:
     type: BiologicalProcessAssociation
     evidence:
@@ -180,88 +110,6 @@ activities:
       provided_by:
       - http://geneontology.org
     term: GO:0030216
-- id: gomodel:6ab067da00001778/6ab067da00001820
-  enabled_by:
-    type: EnabledByGeneProductAssociation
-    evidence:
-    - term: ECO:0000314
-      reference: PMID:34353904
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0001-7646-0052
-        date: '2026-10-01'
-        provided_by:
-        - http://geneontology.org
-    - term: ECO:0000314
-      reference: PMID:10200251
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0001-7646-0052
-        date: '2026-10-01'
-        provided_by:
-        - http://geneontology.org
-    provenances:
-    - contributor:
-      - https://orcid.org/0000-0001-7646-0052
-      date: '2026-10-01'
-      provided_by:
-      - http://geneontology.org
-    term: UniProtKB:P63092
-  molecular_function:
-    type: MolecularFunctionAssociation
-    term: GO:0003925
-  occurs_in:
-    type: CellularAnatomicalEntityAssociation
-    evidence:
-    - term: ECO:0000314
-      reference: PMID:34353904
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0001-7646-0052
-        date: '2026-10-01'
-        provided_by:
-        - http://geneontology.org
-    - term: ECO:0000314
-      reference: GO_REF:0000052
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0001-7646-0052
-        date: '2026-10-01'
-        provided_by:
-        - http://geneontology.org
-    provenances:
-    - contributor:
-      - https://orcid.org/0000-0001-7646-0052
-      date: '2026-10-01'
-      provided_by:
-      - http://geneontology.org
-    term: GO:0005886
-  part_of:
-    type: BiologicalProcessAssociation
-    evidence:
-    - term: ECO:0000314
-      reference: PMID:34353904
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0001-7646-0052
-        date: '2026-10-01'
-        provided_by:
-        - http://geneontology.org
-    - term: ECO:0000314
-      reference: PMID:10200251
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0001-7646-0052
-        date: '2026-10-01'
-        provided_by:
-        - http://geneontology.org
-    provenances:
-    - contributor:
-      - https://orcid.org/0000-0001-7646-0052
-      date: '2026-10-01'
-      provided_by:
-      - http://geneontology.org
-    term: GO:0007189
 - id: gomodel:6ab067da00001778/6ab067da00001785
   enabled_by:
     type: EnabledByGeneProductAssociation
@@ -459,6 +307,24 @@ activities:
       provided_by:
       - http://geneontology.org
     term: GO:0005886
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000315
+        reference: PMID:12080077
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-7646-0052
+          date: '2026-10-01'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-10-01'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000312
   part_of:
     type: BiologicalProcessAssociation
     evidence:
@@ -562,6 +428,32 @@ activities:
       provided_by:
       - http://geneontology.org
     term: GO:0005829
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000315
+        reference: PMID:11864971
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-7646-0052
+          date: '2026-10-01'
+          provided_by:
+          - http://geneontology.org
+      - term: ECO:0000315
+        reference: PMID:12080077
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-7646-0052
+          date: '2026-10-01'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-10-01'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000312
   part_of:
     type: BiologicalProcessAssociation
     evidence:
@@ -629,6 +521,24 @@ activities:
   molecular_function:
     type: MolecularFunctionAssociation
     term: GO:0004708
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:12080077
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-10-01'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7646-0052
+      date: '2026-10-01'
+      provided_by:
+      - http://geneontology.org
+    term: CL:0000312
   part_of:
     type: BiologicalProcessAssociation
     evidence:
@@ -724,6 +634,24 @@ activities:
       provided_by:
       - http://geneontology.org
     term: GO:0005634
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000315
+        reference: PMID:12080077
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-7646-0052
+          date: '2026-10-01'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-10-01'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000312
   part_of:
     type: BiologicalProcessAssociation
     evidence:
@@ -820,6 +748,24 @@ activities:
       provided_by:
       - http://geneontology.org
     term: GO:0005829
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000315
+        reference: PMID:12080077
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-7646-0052
+          date: '2026-10-01'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-10-01'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000312
   part_of:
     type: BiologicalProcessAssociation
     evidence:
@@ -1013,24 +959,6 @@ activities:
         date: '2026-10-01'
         provided_by:
         - http://geneontology.org
-    provenances:
-    - contributor:
-      - https://orcid.org/0000-0001-7646-0052
-      date: '2026-10-01'
-      provided_by:
-      - http://geneontology.org
-    predicate: RO:0002629
-    downstream_activity: gomodel:6ab067da00001778/6ab067da00001815
-  - type: CausalAssociation
-    evidence:
-    - term: ECO:0000314
-      reference: PMID:34353904
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0001-7646-0052
-        date: '2026-10-01'
-        provided_by:
-        - http://geneontology.org
     - term: ECO:0000314
       reference: PMID:27000502
       provenances:
@@ -1077,6 +1005,24 @@ activities:
   molecular_function:
     type: MolecularFunctionAssociation
     term: GO:0004707
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:12080077
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-10-01'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7646-0052
+      date: '2026-10-01'
+      provided_by:
+      - http://geneontology.org
+    term: CL:0000312
   part_of:
     type: BiologicalProcessAssociation
     evidence:
@@ -1133,8 +1079,6 @@ activities:
     predicate: RO:0002304
     downstream_activity: gomodel:6ab067da00001778/6ab067da00002033
 molecules:
-- id: gomodel:6ab067da00001778/6ab067da00001819
-  term: UniProtKB:P63092
 - id: gomodel:6ab067da00001778/6ab067da00001784
   term: UniProtKB:P49190
 - id: gomodel:6ab067da00001778/6ab067da00002041
@@ -1172,15 +1116,6 @@ objects:
   type: gocam:Object
 - id: ECO:0000315
   label: mutant phenotype evidence used in manual assertion
-  type: gocam:Object
-- id: GO:0007189
-  label: adenylate cyclase-activating G protein-coupled receptor signaling pathway
-  type: gocam:Object
-- id: UniProtKB:P63092
-  label: GNAS Hsap
-  type: gocam:Object
-- id: GO:0003925
-  label: G protein activity
   type: gocam:Object
 - id: GO:0004699
   label: diacylglycerol-dependent, calcium-independent serine/threonine kinase activity
@@ -1251,3 +1186,4 @@ provenances:
   date: '2026-10-01'
   provided_by:
   - http://geneontology.org
+  - https://www.uniprot.org
