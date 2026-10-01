@@ -25,6 +25,12 @@ comments:
   is reported to be activated by MKK6 in vitro (PMID:9218798). HRAS chosen for generic
   dominant-negative Ras. The PTH2R->PKCdelta join is a curator inference, not tested
   for TIP39. KRT14 arm not modelled (no evidence linking Ca2+/PKC to loss of deltaNp63).'
+- 'Revision: HRAS -> MAP3K1 and MAP2K3 -> MAPK13 changed to ''directly positively
+  regulates'' with has_input. HRAS-GTP binds the MEKK1 kinase domain directly (PMID:7744823;
+  mouse MEKK1, hence ISS with MGI:MGI:1346872); MKK3 phosphorylates/activates p38delta
+  (IDA PMID:9374491, PMID:9790884). PKCdelta -> HRAS, MAP3K1 -> MAP2K3 (no evidence
+  that MEKK1 directly phosphorylates MKK3; MEKK1''s documented substrates are MKK4/7/MEK1)
+  and MAPK13 -> CEBPA remain ''causally upstream of, positive effect''.'
 activities:
 - id: gomodel:6ab067da00001778/6ab067da00002037
   enabled_by:
@@ -361,11 +367,13 @@ activities:
         provided_by:
         - http://geneontology.org
       term: GO:0045618
-  causal_associations:
-  - type: CausalAssociation
+  molecular_associations:
+  - type: MoleculeAssociation
     evidence:
-    - term: ECO:0000315
-      reference: PMID:12080077
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:MGI:1346872
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-7646-0052
@@ -378,7 +386,36 @@ activities:
       date: '2026-10-01'
       provided_by:
       - http://geneontology.org
-    predicate: RO:0002304
+    predicate: RO:0002233
+    molecule: gomodel:6ab067da00001778/6ab067da00002096
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:12080077
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-10-01'
+        provided_by:
+        - http://geneontology.org
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:MGI:1346872
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-10-01'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7646-0052
+      date: '2026-10-01'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002629
     downstream_activity: gomodel:6ab067da00001778/6ab067da00002023
 - id: gomodel:6ab067da00001778/6ab067da00002015
   enabled_by:
@@ -575,11 +612,19 @@ activities:
         provided_by:
         - http://geneontology.org
       term: GO:0045618
-  causal_associations:
-  - type: CausalAssociation
+  molecular_associations:
+  - type: MoleculeAssociation
     evidence:
-    - term: ECO:0000315
-      reference: PMID:12080077
+    - term: ECO:0000314
+      reference: PMID:9374491
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-10-01'
+        provided_by:
+        - http://geneontology.org
+    - term: ECO:0000314
+      reference: PMID:9790884
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-7646-0052
@@ -592,7 +637,42 @@ activities:
       date: '2026-10-01'
       provided_by:
       - http://geneontology.org
-    predicate: RO:0002304
+    predicate: RO:0002233
+    molecule: gomodel:6ab067da00001778/6ab067da00002097
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:12080077
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-10-01'
+        provided_by:
+        - http://geneontology.org
+    - term: ECO:0000314
+      reference: PMID:9374491
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-10-01'
+        provided_by:
+        - http://geneontology.org
+    - term: ECO:0000314
+      reference: PMID:9790884
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-10-01'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7646-0052
+      date: '2026-10-01'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002629
     downstream_activity: gomodel:6ab067da00001778/6ab067da00002030
 - id: gomodel:6ab067da00001778/6ab067da00002033
   enabled_by:
@@ -1081,8 +1161,12 @@ activities:
 molecules:
 - id: gomodel:6ab067da00001778/6ab067da00001784
   term: UniProtKB:P49190
+- id: gomodel:6ab067da00001778/6ab067da00002097
+  term: UniProtKB:O15264
 - id: gomodel:6ab067da00001778/6ab067da00002041
   term: UniProtKB:P07476
+- id: gomodel:6ab067da00001778/6ab067da00002096
+  term: UniProtKB:Q13233
 objects:
 - id: GO:0005179
   label: hormone activity
@@ -1179,6 +1263,9 @@ objects:
   type: gocam:Object
 - id: ECO:0000305
   label: curator inference used in manual assertion
+  type: gocam:Object
+- id: ECO:0000250
+  label: sequence similarity evidence used in manual assertion
   type: gocam:Object
 provenances:
 - contributor:
