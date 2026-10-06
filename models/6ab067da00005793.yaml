@@ -198,6 +198,24 @@ activities:
       - http://geneontology.org
     predicate: RO:0002233
     molecule: gomodel:6ab067da00005793/6ab067da00005842
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:36071159
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-10-06'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-8769-177X
+      date: '2026-10-06'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0012001
+    molecule: gomodel:6ab067da00005793/6ab067da00005824
 - id: gomodel:6ab067da00005793/6ab067da00005818
   enabled_by:
     type: EnabledByProteinComplexAssociation
@@ -364,6 +382,25 @@ activities:
       - http://geneontology.org
     predicate: RO:0002233
     molecule: gomodel:6ab067da00005793/6ab067da00005809
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:36071159
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-10-06'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-8769-177X
+      date: '2026-10-06'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002629
+    downstream_activity: gomodel:6ab067da00005793/6ab067da00005838
 molecules:
 - id: gomodel:6ab067da00005793/6ab067da00005809
   term: CHEBI:58178
@@ -485,8 +522,6 @@ molecules:
       provided_by:
       - http://geneontology.org
     term: GO:0005765
-- id: gomodel:6ab067da00005793/6ab067da00005838
-  term: GO:1904121
 - id: gomodel:6ab067da00005793/6ab067da00005826
   term: CHEBI:58178
   located_in:
