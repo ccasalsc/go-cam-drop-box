@@ -36,3 +36,14 @@ outage's journal flush (`6518788a`); production Noctua serves each id.
 Removed from `models/` here by the batch's removal PR. Later removal from production, if ever,
 is an exact-path `git rm` in `noctua-models` (the flush rewrote the files, so
 a revert of `ec35b471` conflicts).
+
+## Legacy `gcdb-` recoveries (go-cam-drop-box#29)
+
+Merged legacy YAML-only submissions rebuilt on noctua-dev from the merged YAML,
+stored, and re-submitted as YAML + TTL pairs under their dev ids. Content was
+verified identical to the merged YAML (activities, terms, causal edges,
+molecules, evidence). Not yet promoted.
+
+| old drop-box id | drop-box PR | new id | title |
+|---|---|---|---|
+| `gcdb-6a3a464f-87d2-40ef-9aae-a0cb309bda69` | #18 | `gomodel:6ab067da00001588` | Interleukin-36 beta (IL36B) receptor signaling via IL1RL2-IL1RAP (Human) |
