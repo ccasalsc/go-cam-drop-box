@@ -36,3 +36,14 @@ outage's journal flush (`6518788a`); production Noctua serves each id.
 Removed from `models/` here by the batch's removal PR. Later removal from production, if ever,
 is an exact-path `git rm` in `noctua-models` (the flush rewrote the files, so
 a revert of `ec35b471` conflicts).
+
+## Legacy `gcdb-` recoveries (go-cam-drop-box#29)
+
+Merged legacy YAML-only submissions rebuilt on noctua-dev from the merged YAML,
+stored, and re-submitted as YAML + TTL pairs under their dev ids. Content was
+verified identical to the merged YAML (activities, terms, causal edges,
+molecules, evidence). Not yet promoted.
+
+| old drop-box id | drop-box PR | new id | title |
+|---|---|---|---|
+| `gcdb-8d5b70a7-e685-42d8-b89b-b024b5ac57ec` | #18 | `gomodel:6a6ba88c00001800` | IL-36R defense response to Gram-negative bacterium (Mouse) (existing dev model, refactor replayed) |
