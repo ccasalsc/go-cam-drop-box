@@ -1,11 +1,15 @@
-id: gomodel:gcdb-056b6868-99d6-4e80-b88a-cd3b5666929e
+id: gomodel:6ab067da00001694
 title: DYRK1A phosphorylates CDKL5 to promote its nuclear export and cytoplasmic kinase
   activity (Hsap, ISS from mouse; PMID:27840050, PMID:30266824)
 taxon: NCBITaxon:9606
-status: production
-date_modified: '2026-07-10'
+status: development
+date_modified: '2026-09-29'
+comments:
+- Created with GO AI HUB.
+- Rebuilt on noctua-dev on 2026-09-29 from the merged go-cam-drop-box file gomodel:gcdb-056b6868-99d6-4e80-b88a-cd3b5666929e
+  (legacy YAML-only submission, see go-cam-drop-box#29); content verified identical.
 activities:
-- id: gomodel:gcdb-056b6868-99d6-4e80-b88a-cd3b5666929e/6a4e740f00000134
+- id: gomodel:6ab067da00001694/6ab067da00001695
   enabled_by:
     type: EnabledByGeneProductAssociation
     evidence:
@@ -16,13 +20,13 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-8769-177X
-        date: '2026-07-10'
+        date: '2026-09-29'
         provided_by:
         - http://geneontology.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-8769-177X
-      date: '2026-07-10'
+      date: '2026-09-29'
       provided_by:
       - http://geneontology.org
     term: UniProtKB:Q13627
@@ -39,13 +43,13 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-8769-177X
-        date: '2026-07-10'
+        date: '2026-09-29'
         provided_by:
         - http://geneontology.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-8769-177X
-      date: '2026-07-10'
+      date: '2026-09-29'
       provided_by:
       - http://geneontology.org
     term: GO:0005634
@@ -59,13 +63,13 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-8769-177X
-        date: '2026-07-10'
+        date: '2026-09-29'
         provided_by:
         - http://geneontology.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-8769-177X
-      date: '2026-07-10'
+      date: '2026-09-29'
       provided_by:
       - http://geneontology.org
     term: GO:0046827
@@ -79,17 +83,17 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-8769-177X
-        date: '2026-07-10'
+        date: '2026-09-29'
         provided_by:
         - http://geneontology.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-8769-177X
-      date: '2026-07-10'
+      date: '2026-09-29'
       provided_by:
       - http://geneontology.org
     predicate: RO:0002233
-    molecule: gomodel:gcdb-056b6868-99d6-4e80-b88a-cd3b5666929e/6a4e740f00000136
+    molecule: gomodel:6ab067da00001694/6ab067da00001697
   causal_associations:
   - type: CausalAssociation
     evidence:
@@ -100,18 +104,18 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-8769-177X
-        date: '2026-07-10'
+        date: '2026-09-29'
         provided_by:
         - http://geneontology.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-8769-177X
-      date: '2026-07-10'
+      date: '2026-09-29'
       provided_by:
       - http://geneontology.org
     predicate: RO:0002629
-    downstream_activity: gomodel:gcdb-056b6868-99d6-4e80-b88a-cd3b5666929e/6a4e740f00000139
-- id: gomodel:gcdb-056b6868-99d6-4e80-b88a-cd3b5666929e/6a4e740f00000139
+    downstream_activity: gomodel:6ab067da00001694/6ab067da00001696
+- id: gomodel:6ab067da00001694/6ab067da00001696
   enabled_by:
     type: EnabledByGeneProductAssociation
     evidence:
@@ -122,13 +126,13 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-8769-177X
-        date: '2026-07-10'
+        date: '2026-09-29'
         provided_by:
         - http://geneontology.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-8769-177X
-      date: '2026-07-10'
+      date: '2026-09-29'
       provided_by:
       - http://geneontology.org
     term: UniProtKB:O76039
@@ -145,13 +149,13 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-8769-177X
-        date: '2026-07-10'
+        date: '2026-09-29'
         provided_by:
         - http://geneontology.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-8769-177X
-      date: '2026-07-10'
+      date: '2026-09-29'
       provided_by:
       - http://geneontology.org
     term: GO:0005737
@@ -165,28 +169,31 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-8769-177X
-        date: '2026-07-10'
+        date: '2026-09-29'
         provided_by:
         - http://geneontology.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-8769-177X
-      date: '2026-07-10'
+      date: '2026-09-29'
       provided_by:
       - http://geneontology.org
     term: GO:0070507
 molecules:
-- id: gomodel:gcdb-056b6868-99d6-4e80-b88a-cd3b5666929e/6a4e740f00000136
+- id: gomodel:6ab067da00001694/6ab067da00001697
   term: UniProtKB:O76039
 objects:
 - id: GO:0004674
   label: protein serine/threonine kinase activity
   type: gocam:Object
+- id: UniProtKB:O76039
+  label: CDKL5 Hsap
+  type: gocam:Object
 - id: UniProtKB:Q13627
   label: DYRK1A Hsap
   type: gocam:Object
-- id: UniProtKB:O76039
-  label: CDKL5 Hsap
+- id: ECO:0000250
+  label: sequence similarity evidence used in manual assertion
   type: gocam:Object
 - id: GO:0005634
   label: nucleus
@@ -200,13 +207,9 @@ objects:
 - id: GO:0070507
   label: regulation of microtubule cytoskeleton organization
   type: gocam:Object
-- id: ECO:0000250
-  label: sequence similarity evidence used in manual assertion
-  type: gocam:Object
 provenances:
 - contributor:
   - https://orcid.org/0000-0001-8769-177X
-  date: '2026-07-10'
+  date: '2026-09-29'
   provided_by:
   - http://geneontology.org
-
